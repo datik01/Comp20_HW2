@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>APT Client Form</title>
+	<link href="styles.css" rel="stylesheet" type = "text/css" />
+	<style type="text/css">
+	input {
+		font-family: times
+	}
+	html,body {
+		font-family: arial, helvetica;
+		background-color: #ddd0dd !important;
+		font-size: 1.6vw;
+		background: none;
+	}
+
+	.form{
+		padding-top: 40px;
+		position: absolute;
+	}
+	
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="logo">Atik Personal Training</div>
+		<div class="header">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="client_form.html">Contact</a></li>
+					<li><a href="services.html">Services</a></li>
+				</ul>
+			</nav>
+		</div>
+		<form class="form" method="get">
+			<div class='col1'>Name:</div>
+			<div class='col2'><input type= "text" name="name" id="name" placeholder="enter your name">
+			</div>
+			<div class='col1'>Email:</div>
+			<div class='col2'>
+				<div class='col2'><input type= "text" name="email" id="email" placeholder="enter your email address">
+				</div>
+				<div class='col1'>Date:</div>
+				<div class='col2'><input type= "text" name="date" id="date" placeholder="enter today's date">
+				</div>
+				<div class='col1'>Phone Number:</div>
+				<div class='col2'><input type= "text" name="phone" id="phone" placeholder="enter your phone #">
+				</div>
+				<div class='col1'>Please briefly describe your exercise and injury history:</div>
+				<div class='col2'><textarea row=2 cols=52 placeholder="enter your description here"></textarea>
+				</div>
+				<div class='col1'>Please tell us why you are interested in finding a personal trainer:</div>
+				<div class='col2'><textarea row=2 cols=62 placeholder="explain here"></textarea>
+				</div>
+				<div class='col1'>Do you have a preference of a male or female trainer:</div>
+				<div class='col2'>
+					Male <input type= "radio" name="gender" class="gender" value='Male'>
+					Female <input type= "radio" name="gender" class="gender" value='Female'>
+					No Preference <input type= "radio" name="gender" class="gender" value='No Preference'>
+				</div>
+				<br>
+				<div class='col1'>On a scale of 1-10, how confident are you:</div>
+				<div class='col2'>
+					1 <input type= "radio" name="number" class="number" value='1'>
+					2 <input type= "radio" name="number" class="number" value='2'>
+					3 <input type= "radio" name="number" class="number" value='3'>
+					4 <input type= "radio" name="number" class="number" value='4'>
+					5 <input type= "radio" name="number" class="number" value='5'>
+					6 <input type= "radio" name="number" class="number" value='6'>
+					7 <input type= "radio" name="number" class="number" value='7'>
+					8 <input type= "radio" name="number" class="number" value='8'>
+					9 <input type= "radio" name="number" class="number" value='9'>
+					10 <input type= "radio" name="number" class="number" value='10'>
+				</div>
+				<br>
+				<div class='col1'>On a scale of 1-10, how motivated are you:</div>
+				<div class='col2'>
+					1 <input type= "radio" name="number" class="number" value='1'>
+					2 <input type= "radio" name="number" class="number" value='2'>
+					3 <input type= "radio" name="number" class="number" value='3'>
+					4 <input type= "radio" name="number" class="number" value='4'>
+					5 <input type= "radio" name="number" class="number" value='5'>
+					6 <input type= "radio" name="number" class="number" value='6'>
+					7 <input type= "radio" name="number" class="number" value='7'>
+					8 <input type= "radio" name="number" class="number" value='8'>
+					9 <input type= "radio" name="number" class="number" value='9'>
+					10 <input type= "radio" name="number" class="number" value='10'>
+				</div>
+				<br>
+				<div class='col1'>On a scale of 1-10, how healthy do you percieve yorself to be:</div>
+				<div class='col2'>
+					1 <input type= "radio" name="number" class="number" value='1'>
+					2 <input type= "radio" name="number" class="number" value='2'>
+					3 <input type= "radio" name="number" class="number" value='3'>
+					4 <input type= "radio" name="number" class="number" value='4'>
+					5 <input type= "radio" name="number" class="number" value='5'>
+					6 <input type= "radio" name="number" class="number" value='6'>
+					7 <input type= "radio" name="number" class="number" value='7'>
+					8 <input type= "radio" name="number" class="number" value='8'>
+					9 <input type= "radio" name="number" class="number" value='9'>
+					10 <input type= "radio" name="number" class="number" value='10'>
+				</div>
+				<div class='col1'>What is your number one fitness priority:</div>
+				<select size="1" name='priority' id='priority' multiple>
+					<option value='Gain Lean Muscle Mass'>Gain Lean Muscle Mass</option>
+					<option value='Strength'>Strength</option>
+					<option value='Weight Loss'>Weight Loss</option>
+					<option value='Speed and Agility'>Speed and Agility</option>
+					<option value='Mobility'>Mobility</option>
+				</select>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+		</body>
+		</html>
